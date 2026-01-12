@@ -12,3 +12,35 @@ img,
 video {
   display: block;
 }
+body{
+  display: flex;
+  width: 1728px;
+  height: 1117px;
+  padding: 50px 1542px 1029px 50px;
+  align-items: center;
+}
+
+.like-button{
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 19px;
+  border: 2px solid #F00;
+}
+.like-button h1{
+  color: #F00;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px; 
+}
+.like-button p{
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; 
+}
