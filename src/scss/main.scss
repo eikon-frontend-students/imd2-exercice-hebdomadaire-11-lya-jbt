@@ -27,15 +27,15 @@ body{
   gap: 10px;
   border-radius: 19px;
   border: 2px solid #F00;
+  color: #F00;
 }
 .like-button h1{
-  color: #F00;
-font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 18px; 
-}
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; 
+  }
 .like-button p{
   color: #000;
   font-family: Roboto;
@@ -51,4 +51,17 @@ line-height: 18px;
 .like-button.liked h1,
 .like-button.liked p {
   color: #fff;
+}
+.like-button.liked p {
+  color: transparent;          
+  position: relative;
+  display: inline-block;
+}
+.like-button.liked p::after {
+  content: "148";               
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  pointer-events: none;
 }
